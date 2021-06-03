@@ -1,20 +1,27 @@
 h1 {
   text-align: center;
-  color: #264653;
+  color: white;
+  font-size: 100px;
 }
 
 body {
-  font-size: 40px;
-  background-color: #e9c46a;
-  color: #264653;
+  font-size: 85px;
+  background-color: #a2d2ff;
+  color: white;
+}
+
+input {
+  font-size: 60px;
+  text-align: right;
+  background-color: #a2d2ff;
+  border: white ;
 }
 
 .container {
-  background-color: #2a9d8f;
-  margin-top: 47px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 16px 30px;
   border-radius: 23px;
 }
 
