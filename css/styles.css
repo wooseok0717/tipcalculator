@@ -2,6 +2,9 @@ h1 {
   text-align: center;
   color: white;
   font-size: 100px;
+  padding-bottom: 30px;
+  border-bottom: white 28px dashed;
+  margin-bottom: 20px;
 }
 
 body {
@@ -14,7 +17,20 @@ input {
   font-size: 60px;
   text-align: right;
   background-color: #a2d2ff;
-  border: white ;
+  border: none;
+  border-radius: 15px;
+  width: 400px;
+  color: white;
+}
+
+button {
+  padding: 25px;
+  border-radius: 25px;
+  font-size: 30px;
+  border: none;
+  background-color: white;
+  color: #a2d2ff;
+  font-weight: 700;
 }
 
 .container {
@@ -35,6 +51,34 @@ input {
   font-size: 60px;
 }
 
+#split {
+  font-size: 40px;
+  width: 200px;
+  margin-left: auto;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #a2d2ff;
+}
+
 .round {
-  margin: 120px 0;
+  margin: 50px 0;
+}
+
+#amount {
+  justify-content: space-around;
+  display: flex;
+  margin-top: 30px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.totalamount {
+  font-size: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
