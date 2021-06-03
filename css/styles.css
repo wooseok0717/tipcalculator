@@ -1,8 +1,33 @@
+h1 {
+  text-align: center;
+  color: #264653;
+}
+
+body {
+  font-size: 40px;
+  background-color: #e9c46a;
+  color: #264653;
+}
+
+.container {
+  background-color: #2a9d8f;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 23px;
+}
+
 #app {
   display: flex;
   flex-direction: column;
 }
 
-h1 {
-  text-align: center;
+#each, #total {
+  text-align: right;
+  font-size: 60px;
+}
+
+.round {
+  margin: 30px 0;
 }
