@@ -85,3 +85,14 @@ button {
   margin-top: 30px;
 }
 
+::placeholder {
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.selected {
+  border: white solid 10px;
+  background-color: #a2d2ff;
+  color: white;
+}
