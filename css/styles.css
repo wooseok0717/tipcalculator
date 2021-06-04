@@ -89,6 +89,11 @@ button {
   margin-top: 30px;
 }
 
+#card {
+  width: 60%;
+  margin: auto;
+}
+
 ::placeholder {
   color: white;
   font-size: 50px;
