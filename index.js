@@ -11,9 +11,18 @@ function Values() {
 
   this.calculate = (value = this.beforeTip) => {
     this.beforeTip = Number(value);
-    this.tip = this.beforeTip * this.tipPercent;
-    this.afterTip = this.beforeTip + this.tip;
-    this.eachPerson = this.afterTip / this.splitUpon
+    if (this.roundUp === 'no round ups') {
+      this.tip = this.beforeTip * this.tipPercent;
+      this.afterTip = this.beforeTip + this.tip;
+      this.eachPerson = this.afterTip / this.splitUpon
+    } else {
+      var total = Math.ceil(this.afterTip);
+      var remainder = total % this.splitUpon;
+      total += this.splitUpon - remainder;
+      this.tip = total - this.beforeTip;
+      this.afterTip = total;
+      this.eachPerson = total / this.splitUpon;
+    }
   }
   this.changeTip = (val) => {
     this.tipPercent = Number(val) * .01;
@@ -24,6 +33,9 @@ function Values() {
     } else {
       this.splitUpon = Number(val);
     }
+  }
+  this.changeRoundUp = (val) => {
+    this.roundUp = val;
   }
 };
 
@@ -55,10 +67,8 @@ var currentBill = new Values();
 ///// Tip listener /////
 $('input').change(handleAmount);
 $('#amount button').click(handleTip);
-$('select').change(handleSplit)
-$('button').click(() => {
-  $('button').addClass('selected')
-})
+$('select').change(handleSplit);
+$('#buttons button').click(handleButtons);
 
 ///////////////// E Handlers //////////////////
 
@@ -69,6 +79,8 @@ function handleAmount() {
 }
 
 function handleTip(event) {
+  $('#amount button').removeClass('selected');
+  event.currentTarget.classList.add('selected');
   currentBill.changeTip(event.currentTarget.value);
   update();
 };
@@ -79,7 +91,19 @@ function handleSplit() {
   update();
 }
 
+function handleRoundUp(event) {
+  currentBill.changeRoundUp(event.currentTarget.value);
+  update();
+}
+
 function update() {
   currentBill.calculate();
   renderPage(currentBill);
+}
+
+function handleButtons(event) {
+  $('#buttons button').removeClass('selected');
+  event.currentTarget.classList.add('selected');
+  currentBill.changeRoundUp(event.currentTarget.value);
+  update();
 }

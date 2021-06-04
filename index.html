@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Tip Calculator</h1>
+    <h1>Bill Calculator</h1>
     <div id="app">
       <div class="container">
         <label for="bill">Total Amount</label>
@@ -25,7 +25,7 @@
       <div class="container">
         <label for="amount">Tip %</label>
         <div id="amount">
-          <button value="0">No Tip</button>
+          <button value="0" class="selected">No Tip</button>
           <button value="10">10%</button>
           <button value="15">15%</button>
           <button value="18">18%</button>
@@ -36,9 +36,8 @@
       <div class="container round">
         <label for="buttons">Round Up</label>
         <div id="buttons">
-          <button>No Round Ups</button>
-          <button>Dollarify</button>
-          <button>Fiftify</button>
+          <button class="selected" value="no round ups">No Round Ups</button>
+          <button value="round up">Round Up</button>
         </div>
       </div>
       <div class="container">
