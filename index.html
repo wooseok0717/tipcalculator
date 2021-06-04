@@ -9,7 +9,7 @@
       <div class="container">
         <label for="bill">Total Amount</label>
         <div class="totalamount">
-          $<input type="number" min="0.01" step="0.01" id="bill" value="0">
+          $<input type="number" min="0.01" step="0.01" id="bill" placeholder="Amount">
         </div>
       </div>
       <div class="container">
@@ -25,17 +25,18 @@
       <div class="container">
         <label for="amount">Tip %</label>
         <div id="amount">
-          <button>No Tip</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>18%</button>
-          <button>20%</button>
-          <button>25%</button>
+          <button value="0">No Tip</button>
+          <button value="10">10%</button>
+          <button value="15">15%</button>
+          <button value="18">18%</button>
+          <button value="20">20%</button>
+          <button value="25">25%</button>
         </div>
       </div>
       <div class="container round">
         <label for="buttons">Round Up</label>
         <div id="buttons">
+          <button>No Round Ups</button>
           <button>Dollarify</button>
           <button>Fiftify</button>
         </div>
@@ -53,6 +54,7 @@
         <div id="each">$<span>0.00</span></div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
