@@ -1,18 +1,22 @@
 /* Element Selector */
 
 h1 {
-  border-bottom: white 28px dashed;
+  border-bottom: white 20px solid;
   color: white;
   font-size: 100px;
   margin-bottom: 20px;
   padding-bottom: 30px;
   text-align: center;
+  margin-top: 30px;
 }
 
 body {
   background-color: #a2d2ff;
   color: white;
   font-size: 60px;
+  border: white 20px solid;
+  margin: 0;
+  height: 100vh;
 }
 
 input {
