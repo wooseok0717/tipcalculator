@@ -1,73 +1,81 @@
+/* Element Selector */
+
 h1 {
-  text-align: center;
+  border-bottom: white 28px dashed;
   color: white;
   font-size: 100px;
-  padding-bottom: 30px;
-  border-bottom: white 28px dashed;
   margin-bottom: 20px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 body {
-  font-size: 85px;
   background-color: #a2d2ff;
   color: white;
+  font-size: 60px;
 }
 
 input {
-  font-size: 60px;
-  text-align: right;
   background-color: #a2d2ff;
   border: none;
   border-radius: 15px;
-  width: 400px;
   color: white;
+  font-size: 60px;
+  text-align: right;
+  width: 400px;
 }
 
 button {
-  padding: 25px;
-  border-radius: 25px;
-  font-size: 30px;
-  border: none;
   background-color: white;
+  border: none;
+  border-radius: 25px;
   color: #a2d2ff;
+  font-size: 30px;
   font-weight: 700;
+  padding: 25px;
 }
 
+/* Class Selector */
+
 .container {
-  margin-top: 0px;
+  border-radius: 23px;
   display: flex;
   flex-direction: column;
+  margin-top: 0px;
   padding: 16px 30px;
-  border-radius: 23px;
 }
+
+.totalamount {
+  display: flex;
+  font-size: 60px;
+  justify-content: flex-end;
+}
+
+/* Id Selector */
 
 #app {
   display: flex;
   flex-direction: column;
 }
 
-#each, #total {
-  text-align: right;
+#each, #total, #totaltip {
   font-size: 60px;
+  text-align: right;
 }
 
 #split {
-  font-size: 40px;
-  width: 200px;
-  margin-left: auto;
   border: none;
   border-radius: 10px;
-  padding: 10px;
   color: #a2d2ff;
-}
-
-.round {
-  margin: 50px 0;
+  font-size: 40px;
+  margin-left: auto;
+  padding: 10px;
+  width: 200px;
 }
 
 #amount {
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
   margin-top: 30px;
 }
 
@@ -77,8 +85,3 @@ button {
   margin-top: 30px;
 }
 
-.totalamount {
-  font-size: 60px;
-  display: flex;
-  justify-content: flex-end;
-}
