@@ -39,6 +39,11 @@ button {
   padding: 25px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Class Selector */
 
 .container {
@@ -49,10 +54,15 @@ button {
   padding: 16px 30px;
 }
 
-.totalamount {
+.totalamount, .prepaid {
   display: flex;
   font-size: 60px;
   justify-content: flex-end;
+}
+
+.money {
+  font-size: 60px;
+  text-align: right;
 }
 
 /* Id Selector */
@@ -62,15 +72,9 @@ button {
   flex-direction: column;
 }
 
-#each, #total, #totaltip {
-  font-size: 60px;
-  text-align: right;
-}
-
-#split {
+#split, #cards {
   border: none;
   border-radius: 10px;
-  color: #a2d2ff;
   font-size: 40px;
   margin-left: auto;
   padding: 10px;
@@ -83,7 +87,7 @@ button {
   margin-top: 30px;
 }
 
-#buttons {
+#buttons, #payingfor {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
@@ -100,8 +104,32 @@ button {
   font-style: italic;
 }
 
+
 .selected {
   border: white solid 10px;
   background-color: #a2d2ff;
+  color: white;
+}
+
+
+
+
+
+/* for cards */
+#bgcard, #bgcard input {
+  background-color: #ffc6ff;
+}
+
+.pinkfont {
+  color: #ffc6ff;
+}
+
+.bluefont {
+  color: #a2d2ff;
+}
+
+.selectedpink {
+  border: white solid 10px;
+  background-color: #ffc6ff;
   color: white;
 }
