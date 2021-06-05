@@ -42,6 +42,11 @@ button {
 a {
   color: white;
   text-decoration: none;
+  font-size: 45px;
+}
+
+label {
+  margin-bottom: -15px;
 }
 
 /* Class Selector */
