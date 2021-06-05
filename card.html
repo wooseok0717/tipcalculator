@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Splitter</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body id="bgcard">
+    <h1>Card Splitter</h1>
+    <div id="app">
+      <div class="container">
+        <label for="bill">Total</label>
+        <div class="totalamount">
+          $<input type="number" min="0.01" step="0.01" id="bill" placeholder="Amount">
+        </div>
+      </div>
+      <div class="container">
+        <label for="split">Split</label>
+        <select id="split" class="pinkfont">
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="container">
+        <label for="cash">Prepaid Cash</label>
+        <div class="prepaid">
+          $<input type="number" min="0.01" step="0.01" id="cash" placeholder="if any">
+        </div>
+      </div>
+      <div class="container">
+        <label for="cards">Total Cards</label>
+        <select id="cards" class="pinkfont">
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+      <div class="container">
+        <label for="payingfor">Paying For</label>
+        <div id="payingfor">
+          <button value="1" class="selectedpink pinkfont">Myself</button>
+          <button value="2" class="pinkfont">For 2</button>
+        </div>
+      </div>
+      <div class="container">
+        <label for="eachperson">Each Person Pays</label>
+        <div id="eachperson" class="money">$<span>0.00</span></div>
+      </div>
+      <div class="container">
+        <label for="cardholder">Card Holder Pays</label>
+        <div id="cardholder" class="money">$<span>0.00</span></div>
+      </div>
+      <div class="container">
+        <label for="receive">Card Holder Gets</label>
+        <div id="receive" class="money">$<span>0.00</span></div>
+      </div>
+      <button id="card" class="selectedpink"><a href="index.html">Bill Calculator</a></button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="card.js"></script>
+  </body>
+</html>
