@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Bill Calculator</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -14,7 +15,7 @@
       </div>
       <div class="container">
         <label for="split">Split</label>
-        <select id="split">
+        <select id="split" class="bluefont">
           <option>Alone</option>
           <option>2</option>
           <option>3</option>
@@ -42,17 +43,17 @@
       </div>
       <div class="container">
         <label for="totaltip">Total Tip</label>
-        <div id="totaltip">$<span>0.00</span></div>
+        <div id="totaltip" class="money">$<span>0.00</span></div>
       </div>
       <div class="container">
         <label for="total">Total after tip</label>
-        <div id="total">$<span>0.00</span></div>
+        <div id="total" class="money">$<span>0.00</span></div>
       </div>
       <div class="container">
         <label for="each">Each person</label>
-        <div id="each">$<span>0.00</span></div>
+        <div id="each" class="money">$<span>0.00</span></div>
       </div>
-      <button id="card" class="selected"><a>Card Splitter</a></button>
+      <button id="card" class="selected"><a href="card.html">Card Splitter</a></button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
